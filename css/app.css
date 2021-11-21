@@ -1,0 +1,286 @@
+/* CODE FOR ACCESSIBLE SKIP LINK – DO NOT DELETE */
+
+
+
+header {
+  background-color: ##C7D8CA;
+    padding:1rem;
+    /*position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;*/
+}
+
+.hero img {
+  height:35rem;
+  width:100%;
+}
+
+header a {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #383838;
+}
+
+header a:hover {
+  color:#C7D8CA;
+}
+
+header img {
+  height: 8rem;
+}
+
+th .button {
+  background-color:#C7D8CA;
+}
+
+th .button:hover {
+  background-color:#C7D8CA;
+}
+
+thead {
+  color:#fff;
+}
+
+
+.checkin {
+  padding: 2rem;
+}
+
+.checkin h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #fff;
+}
+
+.checkin p {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+.checkin thead {
+  background-color: #383838;
+  border: 0;
+}
+
+.checkin thead th {
+  padding: 2rem;
+}
+
+.checkin thead th .far {
+  margin-right: .5rem;
+}
+
+.checkin thead th .submit {
+  background-color: #C7D8CA;
+}
+
+.checkin thead th input[type="text"] {
+  display: inline;
+  width: 100%;
+  border: 1.5px solid #BFB283;
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+/* media query to change width of input on wider screens */
+@media screen and (min-width: 40em){
+  .checkin thead th input[type="text"] {
+    width: auto;
+  }
+}
+
+.table {
+  font-family: futura-pt, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #fff;
+}
+
+.table button {
+  background-color:#C7D8CA;
+  color: #383838;
+}
+
+
+footer img {
+  height: 8rem;
+}
+
+.map img {
+  height: 40rem;
+}
+
+
+.hero {
+
+}
+
+.checkin {
+  background-color:#383838;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+thead {
+  background-color:#383838;
+  border:0;
+}
+
+
+.rooms {
+  padding: 4rem 0;
+  margin-top:2rem; 
+  font-family: futura-pt, sans-serif;
+}
+
+.rooms h1 {
+  font-family: "bodoni 72", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #383838;
+    margin: 0 0 2rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.rooms h3 {
+  font-family: futura-pt, sans-serif;
+  color:#BFB283;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.rooms h2 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #383838;
+
+}
+
+.services {
+    padding: 4rem;
+    background-color:#383838;
+    margin-top:2rem;
+}
+
+.services img {
+    height: 20rem;
+}
+
+.services h1 {
+  font-family: futura-pt, sans-serif;
+  color: #fff;
+    margin: 0;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.services p {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+}
+
+
+.divide {
+  background-color:#C7D8CA;
+}
+
+.map {
+
+}
+
+.map h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #383838;
+}
+
+footer {
+  background-color:#383838;
+  padding: 2rem 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /*position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;*/
+}
+
+footer p {
+    color:#fff;
+    margin: 0
+}
+footer address {
+    color:#fff;
+    margin: 0
+    font-style:normal;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer i {
+    color:#fff;
+    margin: 0
+}
+
+footer a {
+  color: #fff;
+  font-style:normal;
+}
+
+footer address {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+footer .button {
+  margin-bottom:0;
+  background-color: #C7D8CA
+}
+
+footer .button:hover {
+  background-color: #C7D8CA;
+}
+
+
+
+
+
+
+.skip-link {
+  position: absolute;
+  padding: .5rem 1rem;
+  color: #fff;
+  background-color: #212121;
+  text-decoration: none;
+  z-index: 10;
+  transform: translateY(-100%);
+  transition: transform .3s ease-out;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: #fff solid .125rem;
+}
+
+@media print {
+  .skip-link {
+    display: none;
+  }
+}
